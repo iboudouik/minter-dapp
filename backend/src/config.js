@@ -14,7 +14,7 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 const solanaMetadata = {
   symbol: "SGF",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://osign.co",
+  external_url: "https://socratesgadfly.com",
   creators: [
     {
       address: "0x43FdfbD88A03B8FD09763a0450Ced3E784a1f436",
@@ -52,7 +52,7 @@ const format = {
 
 const extraMetadata = {
   artist: "Osign",
-  external_url: "https://osign.co", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://socratesgadfly.com", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -60,7 +60,7 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby, polygon, or ethereum
+const CHAIN = 'polygon'; // only rinkeby, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Socrates Gadfly';
@@ -69,11 +69,11 @@ const METADATA_UPDATABLE = false; // set to false if you don't want to allow met
 const OWNER_ADDRESS = '0x43FdfbD88A03B8FD09763a0450Ced3E784a1f436';
 const TREASURY_ADDRESS = '0x43FdfbD88A03B8FD09763a0450Ced3E784a1f436';
 const MAX_SUPPLY = 3334; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const MINT_PRICE = 8; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 20; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-07-30T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-08-08T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
