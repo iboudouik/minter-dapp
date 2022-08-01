@@ -1,9 +1,9 @@
 const contractAddress = "0x0914165579BDE29DD8DAe86A565338b68768ad7c"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the CodeCats NFT Project!!";
+const welcome_h1 = "Welcome to the Socrates Gadfly NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'The CodeCats NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection. Follow step by step on the <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">codeSTACKr</a> YouTube channel.';
+const welcome_p = 'Socrates Gadflies live on the blockchain seeking to accelerate the transition to Crypto Technologies & Web3 for a brighter tomorrow. <a href="https://socratesgadfly.com"  target="_blank" rel="noopener noreferrer">Socrates Gadfly</a> Project.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
