@@ -394,3 +394,57 @@ section {
 .hidden {
   display: none;
 }
+
+/* COLLABORATION */
+
+.collaboration {
+  padding: 5rem 0;
+  background: var(--accent-color);
+  text-align: center;
+  color: var(--bg-color);
+}
+.collaboration h1 {
+  text-shadow: 2px 2px 0 var(--font-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+}
+.collaboration p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: var(--font-secondary);
+  margin: 1rem 0;
+}
+.collaboration blockquote {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.collaboration .flex {
+  display: flex;
+  align-items: center;
+}
+.collaboration span img {
+  width: 20vw;
+  margin-left: 1rem;
+  box-shadow: 2px 2px 4px var(--font-color);;
+}
+
+.collabs {
+  display: flex;
+  justify-content: center;
+}
+.collabs h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.collabs .collab {
+  height: 15rem;
+  margin: 3rem;
+}
+.collabs img {
+  height: 100%;
+  border-radius: 10px;
+}
+.collabs .collab:last-of-type img {
+  filter: hue-rotate(180deg);
+}
