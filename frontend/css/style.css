@@ -916,13 +916,19 @@ footer {
   margin-top: 2rem;
   font-size: 2rem;
 }
+.values .row h2 {
+  margin: 2rem 0;
+}
+.values .row p {
+  margin: 2rem 0;
+}
+
 .values .row {
   display: flex;
 }
 .values .column {
   width: 33.33%;
   margin: 2rem 0;
-  padding: 3rem 0;
 }
 .values .row img {
   width: 50%;
