@@ -918,11 +918,11 @@ footer {
 }
 .values .row {
   display: flex;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 .values .column {
   width: 33.33%;
-  margin: 2rem 0;
+  margin: 2rem;
 }
 .values .row img {
   width: 50%;
