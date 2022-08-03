@@ -918,7 +918,7 @@ footer {
   font-size: 2rem;
 }
 .values .row {
-  display: stretch;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
