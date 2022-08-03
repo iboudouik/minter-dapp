@@ -927,3 +927,30 @@ footer {
   width: 50%;
   padding: 2rem;
 }
+
+/* TEAM */
+
+.team {
+  background: var(-
+  text-align: cente
+  padding: 3rem 0;
+}
+.team h1 {
+  color: var(--bg-c
+  text-shadow: 2px 
+  font-style: itali
+  margin: 2rem 0;
+  font-size: 3.5rem
+}
+.team h2 {
+  color: var(--bg-c
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.team .row {
+  display: flex;
+}
+.team .row img {
+  width: 100%;
+  padding: 0 2rem;
+}
