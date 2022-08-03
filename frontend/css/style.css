@@ -918,9 +918,12 @@ footer {
   font-size: 2rem;
 }
 .values .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
 }
 .values .row img {
   width: 50%;
