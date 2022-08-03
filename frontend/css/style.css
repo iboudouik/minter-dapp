@@ -916,15 +916,9 @@ footer {
   margin-top: 2rem;
   font-size: 2rem;
 }
-.values .row h2 {
-  margin: 2rem 0;
-}
-.values .row p {
-  margin: 2rem 0;
-}
-
 .values .row {
   display: flex;
+  margin: 2rem 0;
 }
 .values .column {
   width: 33.33%;
