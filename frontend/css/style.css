@@ -918,7 +918,7 @@ footer {
 }
 .values .row {
   display: flex;
-  margin: 2rem 0;
+  margin: 3rem;
 }
 .values .column {
   width: 33.33%;
