@@ -905,7 +905,7 @@ footer {
   color: var(--bg-color);
   padding: 3rem 0;
 }
-.vakues h1 {
+.values h1 {
   color: var(--bg-color);
   text-shadow: 2px 2px 0 var(--font-color);
   font-style: italic;
@@ -918,7 +918,7 @@ footer {
   font-size: 2rem;
 }
 .values .row {
-  display: flex;
+  display: inline-block;;
 }
 .values .row img {
   width: 100%;
