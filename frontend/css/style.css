@@ -900,12 +900,12 @@ footer {
 /* VALUES */
 
 .values {
-  padding: 5rem 0;
   background: var(--btn-bg-color);
   text-align: center;
   color: var(--bg-color);
+  padding: 3rem 0;
 }
-.values h1 {
+.vakues h1 {
   color: var(--bg-color);
   text-shadow: 2px 2px 0 var(--font-color);
   font-style: italic;
@@ -919,13 +919,8 @@ footer {
 }
 .values .row {
   display: flex;
-  margin: 3rem 0;
-}
-.values .column {
-  width: 33.33%;
-  margin: 3rem;
 }
 .values .row img {
-  width: 50%;
+  width: 100%;
   padding: 0 2rem;
 }
