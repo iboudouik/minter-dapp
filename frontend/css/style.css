@@ -855,7 +855,6 @@ footer {
   }
   .decode span {
     float: none;
-    display: block;
   }
   .decode span img {
     width: 100%;
