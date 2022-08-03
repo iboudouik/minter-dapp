@@ -918,6 +918,7 @@ footer {
 }
 .values .row {
   display: flex;
+  width: 33.33%;
 }
 .values .row img {
   width: 50%;
