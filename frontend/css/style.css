@@ -896,3 +896,30 @@ footer {
 .hidden {
   display: none;
 }
+
+/* VALUES */
+
+.value {
+  background: var(--accent-color);
+  text-align: center;
+  padding: 3rem 0;
+}
+.value h1 {
+  color: var(--bg-color);
+  text-shadow: 2px 2px 0 var(--font-color);
+  font-style: italic;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+}
+.value h2 {
+  color: var(--bg-color);
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.value .row {
+  display: flex;
+}
+.value .row img {
+  width: 100%;
+  padding: 0 2rem;
+}
