@@ -921,9 +921,9 @@ footer {
 }
 .values .column {
   width: 33.33%;
+  margin: 2rem 0;
 }
 .values .row img {
   width: 50%;
   padding: 0 2rem;
-  margin: 2rem 0;
 }
