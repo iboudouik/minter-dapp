@@ -918,7 +918,9 @@ footer {
   font-size: 2rem;
 }
 .values .row {
-  display: inline-block;;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .values .row img {
   width: 100%;
