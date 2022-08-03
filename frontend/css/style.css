@@ -900,9 +900,10 @@ footer {
 /* VALUES */
 
 .values {
-  background: var(--accent-color);
+  padding: 5rem 0;
+  background: var(--btn-bg-color);
   text-align: center;
-  padding: 3rem 0;
+  color: var(--bg-color);
 }
 .values h1 {
   color: var(--bg-color);
