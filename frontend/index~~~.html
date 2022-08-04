@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Socrates Gadfly</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/x-icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/x-icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/x-icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/x-icon/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/brands.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/three-dots.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="images/x-icon/SGF-logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="menu">
+          <a
+            href="https://discord.gg/KDNUbtww"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/discord.webp" alt="Discord" />
+          </a>
+          <a
+            href="https://twitter.com/SGF_NFT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/twitter.webp" alt="Twitter" />
+          </a>
+          <a
+            href="https://opensea.io/collection/socrates-gadfly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/header/opensea.webp" alt="Opensea" />
+          </a>
+          <button class="wallet-btn btn" id="connectWallet">
+            <span>Connect Wallet</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="container not-connected">
+      <div>
+        <h2 id="welcomeH2">Connect to MetaMask to Get Started</h2>
+        <h1 id="welcomeH1">Welcome to the Socrates Gadfly NFT Project!</h1>
+        <p id="welcomeP">
+          Socrates Gadflies live on the blockchain seeking to accelerate the transition to Crypto Technologies & Web3 for a brighter tomorrow.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="countdown card">
+        <div id="countdown">
+          <ul class="count-down" data-date="">
+            <li class="clock-item">
+              <span class="count-number days">20</span>
+              <p class="count-text">Days</p>
+            </li>
+
+            <li class="clock-item">
+              <span class="count-number hours">20</span>
+              <p class="count-text">Hour</p>
+            </li>
+
+            <li class="clock-item">
+              <span class="count-number minutes">20</span>
+              <p class="count-text">Min</p>
+            </li>
+
+            <li class="clock-item">
+              <span class="count-number seconds">20</span>
+              <p class="count-text">Sec</p>
+            </li>
+          </ul>
+          <h2 id="subHeading">Pre-Sale Countdown</h2>
+        </div>
+        <h1 id="mainHeading">NFT Drop Coming Soon!!</h1>
+        <p id="mainText">
+          A new batch of SGF will be available very soon!
+        </p>
+        <a
+          id="actionButton"
+          href="https://discord.gg/KDNUbtww"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hero-btn btn"
+          ><span>Join the Catmmunity</span>
+        </a>
+        <div id="mintContainer" class="mint-container hidden">
+          <div class="info-container">
+            <div>
+              <h3>Supply</h3>
+              <p id="totalSupply">100</p>
+            </div>
+            <div>
+              <h3>Price Per Mint</h3>
+              <p id="pricePerMint">1 ETH</p>
+            </div>
+            <div>
+              <h3>Max</h3>
+              <p id="maxPerMint">5 per wallet</p>
+            </div>
+          </div>
+          <div class="mint-qty">
+            <span>
+              <button class="input-number-decrement btn" id="mintDecrement">–</button>
+              <input
+                id="mintInput"
+                class="input-number btn"
+                type="number"
+                value="1"
+                min="1"
+                max="5"
+              />
+              <button class="input-number-increment btn" id="mintIncrement">+</button>
+            </span>
+            <button id="setQtyMax" class="btn">SET MAX</button>
+          </div>
+          <div class="total-price-container">
+            <h3>Total</h3>
+            <p id="totalPrice">.001 ETH</p>
+          </div>
+          <button id="mintButton" class="hero-btn btn mint-btn">Mint</button>
+        </div>
+      </div>
+      <div class="minted-container card show-card hidden">
+        <h1>🎉</h1>
+        <h2>Minted!</h2>
+        <p>Here's your trasaction link:</p>
+        <a id="mintedTxnBtn" href="" target="_blank" rel="noopener noreferrer">
+          <button class="hero-btn btn">View Transaction</button>
+        </a>
+        <p>View it in the collection:</p>
+        <a
+          id="mintedLinkBtn"
+          href="https://opensea.io/collection/socrates-gadfly"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="hero-btn btn">View Collection</button>
+        </a>
+      </div>
+    </section>
+
+    <div id="spinner" class="dot-spin"></div>
+
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="images/slider/0.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/1.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/2.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/3.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/4.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/5.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/6.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/7.png" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/slider/8.png" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <section class="collaboration">
+     
+      <div class="container">
+        <h1>About Socrates Gadfly</h1>
+        <p>The term <strong>“Gadfly”</strong> was used by Plato in the Apology to describe Socrates’ acting as an uncomfortable goad to the Athenian political scene, like a spur or biting fly arousing a sluggish horse. </p>
+        <p>Living on the blockchain seeking to accelerate the transition to Crypto Technologies & Web3 for a brighter tomorrow, <strong>“Socrates Gadfly”</strong> is a collection of 3333 algorithmically-generated “Gadflies” NFTs. </p>
+        <p>Some are rarer than others, with a few that are legendary. No two Gadflies are exactly alike, and each one of them can be officially owned by a single person on the blockchain. Every single trait is hand drawn by our talented creative team. </p>
+        <blockquote>"The unexamined life is not worth living"<p></p></blockquote>
+        <div class="collabs">
+          <a href="https://osign.co" target="_blank" rel="noopener noreferrer" class="collab">
+            <img src="images/collab/osign.png" alt="Osign">
+            <h2>Art for Change!</h2>
+          </a>
+          <a href="https://osign.co" target="_blank" rel="noopener noreferrer" class="collab">
+            <img src="images/collab/sgf.png" alt="Socrates Gadfly">
+            <h2>Be A Gadfly!</h2>
+          </a>
+      </div>
+    </section>
+    <section class="values">
+      <div class="container">
+        <h1>Our core values guides everything we do</h1>
+        <div class="row">
+          <div class="member aos-init" data-aos="zoom-in" data-aos-offset="200">
+            <div class="member-info">
+              <h2>CHALLENGE</h2>
+              <p>We are a community of individuals who aren’t afraid to push the boundaries, challenge the status quo, and communicate boldly. We’re making an impact on web3 culture. We are Gadflies!</p>
+            </div>
+          </div>
+          <div class="member aos-init" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="200">
+            <div class="member-info">
+              <h2>COMMUNITY FIRST</h2>
+              <p>Everything starts and ends with the community. The moment we prioritize something other than the community will be the beginning of the end. We won’t let that happen, because we’ll always have community as the #1 value of Socrates Gadfly.</p>
+            </div>
+          </div>
+          <div class="member aos-init" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="200">
+            <div class="member-info">
+              <h2>TRUST THE PROCESS</h2>
+              <p>Good things take time. Decentralized movements can’t turn corners as quickly as centralized movements, and that’s both a blessing and a curse. Decentralized doesn’t mean there can’t be leaders. The core team will provide guard rails and resources for all beans to grow together, but it won’t happen overnight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container roadmap">
+      <h1>Roadmap</h1>
+    </div>
+    <div class="wrapper">
+      <div class="center-line">
+        <a href="#" class="scroll-down"><i class="fas fa-claret-up"></i></a>
+      </div>
+      <div class="row row-1 aos-init aos-animate" data-aos="fade-right" data-aos-offset="200">
+        <section>
+          <i class="icon fa-solid fa-egg"></i>
+          <div class="details">
+            <span class="title">Waitlisting</span>
+            <span>August 03, 2022</span>
+          </div>
+          <p>
+            Get on the waitlist now! The first <strong>333</strong> will get <strong>1 FREE</strong> for every <strong>1</strong> you mint. Every waitlisted address can mint upto 10 SGF. That means you can mint up to 20 SGF in total for the price of 10.
+          </p>
+          <div class="bottom">
+            <a href="https://discord.gg/KDNUbtww" target="_blank" rel="noopener noreferrer">Get Waitlisted!</a>
+          </div>
+        </section>
+      </div>
+      <div class="row row-2 aos-init" data-aos="fade-left" data-aos-offset="200">
+        <section>
+          <i class="icon fas fa-heart"></i>
+          <div class="details">
+            <span class="title">Pre-Sale</span>
+            <span>August 13, 2022</span>
+          </div>
+          <p>
+            Don't miss out on the pre-sale! The first <strong>333</strong> waitlisted accounts will receive a <strong>FREE</strong> SGF for every SGF they mint.<br>Also, the first <strong>100</strong> wallets that mint during the pre-sale will receive <strong>1</strong> FREE <a href="https://opensea.io/collection/codecats?search[sortAscending]=true&amp;search[sortBy]=PRICE&amp;search[toggles][0]=BUY_NOW" target="_blank" rel="noopener noreferrer">Socrates Gadfly</a> NFT.
+          </p>
+        </section>
+      </div>
+      <div class="row row-1 aos-init" data-aos="fade-right" data-aos-offset="200">
+        <section>
+          <i class="icon fa-solid fa-shopping-cart"></i>
+          <div class="details">
+            <span class="title">Public Sale</span>
+            <span>August 15, 2022</span>
+          </div>
+          <p>
+            Public sale starts. No waitlist needed. Mint away!
+          </p>
+        </section>
+      </div>
+      <div class="row row-2 aos-init" data-aos="fade-left" data-aos-offset="200">
+        <section>
+          <i class="icon fa-solid fa-paper-plane"></i>
+          <div class="details">
+            <span class="title">Community & Connection</span>
+            <span>25%</span>
+          </div>
+          <p>
+            Enable our DAO system that will allow holders of the project to have voting power on all major decisions coming to the project via snapshot.
+          </p>
+        </section>
+      </div>
+      <div class="row row-1 aos-init" data-aos="fade-right" data-aos-offset="200">
+        <section>
+          <i class="icon fa-solid fa-store"></i>
+          <div class="details">
+            <span class="title">Merch Store</span>
+            <span>50%</span>
+          </div>
+          <p>
+            Official merch store will be released to all current hodlers with access to high quality merch related to Socrates Gadfly brand and 10 random holders get $100 to spend.
+          </p>
+        </section>
+      </div>
+      <div class="row row-2 aos-init" data-aos="fade-left" data-aos-offset="200">
+        <section>
+          <i class="icon fas fa-gift"></i>
+          <div class="details">
+            <span class="title">Community & Charity</span>
+            <span>75%</span>
+          </div>
+          <p>
+            Activate and fund the community and charity wallet. (DAO system will be used to decide upon which charities will be considered) & First IRL Meet Up..
+          </p>
+        </section>
+      </div>
+      <div class="row row-1 aos-init" data-aos="fade-right" data-aos-offset="200">
+        <section>
+          <i class="icon fas fa-jedi"></i>
+          <div class="details">
+            <span class="title">UTOPIA</span>
+            <span>100%</span>
+          </div>
+          <p>
+            The Metaverse action begins! DAO voting starts construction of Utopia in the Metaverse. (buying land on DAO desired platform). Holders will begin to receive $SGF Token for amount of hodling time. Metaverse is launched and constitution of Utopia curated in a Metaverse Meet Up.
+          </p>
+        </section>
+      </div>
+      <div class="roadmap-v2 aos-init" data-aos="fade-up" data-aos-offset="200">
+        <p>The Next Generation : Socrates Gadfly 3D release</p>
+      </div>
+    </div>
+    <section class="team">
+      <div class="container">
+        <h1>Meet The Team</h1>
+        <div class="row">
+          <div class="member aos-init" data-aos="zoom-in" data-aos-offset="200">
+            <div class="member-img">
+              <img src="images/Collab/01.png" alt="Program Manager">
+            </div>
+            <div class="member-info">
+              <h2>Zeus</h2>
+              <p>Program Manager</p>
+            </div>
+          </div>
+          <div class="member aos-init" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="200">
+            <div class="member-img">
+              <img src="images/Collab/02.png" alt="member">
+            </div>
+            <div class="member-info">
+              <h2>Poseidon</h2>
+              <p>Creative Director</p>
+            </div>
+          </div>
+          <div class="member aos-init" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="200">
+            <div class="member-img">
+              <img src="images/Collab/03.png" alt="member">
+            </div>
+            <div class="member-info">
+              <h2>Iris</h2>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h1>FAQ</h1>
+        <ul>
+          <li>
+            <input id="firstFaq" type="checkbox">
+            <i></i>
+            <h2>Why Should I Mint During The Pre-Sale?</h2>
+            <p>Everyone waitlisted will be able to mint up to 10 <strong>SGF</strong>. During the Pre-Sale, the first <strong>333</strong> waitlisted will get 1 FREE <strong>SGF</strong> for every 1 you mint! The free <strong>SGF</strong> will be transferred to your wallet at the end of the pre-sale.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked="">
+            <i></i>
+            <h2>How many <strong>Gadflies </strong> are available?</h2>
+            <p>There will be 3333 <strong>Gadflies</strong> available in the inaugural release. We will be launching another collection shortly after to continue building our Utopia Metaverse.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked="">
+            <i></i>
+            <h2>What Chain Do <strong>SGF</strong> Nest In?</h2>
+            <p>Polygon. The <a href="https://polygon.technology/" target="_blank" rel="noopener noreferrer">Polygon</a> chain is a layer 2 Ethereum chain and provides greatly reduced gas fees.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked="">
+            <i></i>
+            <h2>What Is The Mint Price?</h2>
+            <p>8 MATIC.<br>To get MATIC on the Polygon chain, use your favorite exchange such as <a href="https://transak.com/" target="_blank" rel="noopener noreferrer">Transak</a>.</p>
+          </li>
+          <li>
+            <input type="checkbox" checked="">
+            <i></i>
+            <h2>How Long Will The Pre-Sale Last?</h2>
+            <p>Waitlisting starts <strong>August 03, 2022</strong>.<br>Pre-Sale starts <strong>August 13, 2022 at 2:00 PM UTC</strong>.<br>Pubic Sale starts <strong>August 15, 2022 at 2:00 PM UTC</strong></p>
+          </li>
+          <li>
+            <input type="checkbox" checked="">
+            <i></i>
+            <h2>Which Marketplace Will <strong>SGF</strong> Be Listed On?</h2>
+            <p>Once your <strong>SGF</strong> is minted, it will be listed on OpenSea under the <a href="https://opensea.io/collection/socrates-gadfly" target="_blank" rel="noopener noreferrer">Socrates Gadfly</a> Collection.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>Copyright © SGF 2022</footer>
+    <div id="spinner" class="dot-spin hidden"></div>
+    <script src="js/metamask-onboarding.bundle.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/abi.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      AOS.init({
+        disable: 'phone'
+      });
+    </script>
+  </body>
+</html>
