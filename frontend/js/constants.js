@@ -1,4 +1,4 @@
-const contractAddress = "0xa9aA211518AFf172735ea8568e8Fe6023586F7bE"; //Replace with your own contract address
+const contractAddress = "0x58d06774e6Cd672f6378F0547ce5F5187312aF8D"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Socrates Gadfly NFT Project!!";
