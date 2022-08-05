@@ -1,7 +1,5 @@
 const abi = [
   {
-    "inputs": [
-      {
         "components": [
           {
             "internalType": "string",
