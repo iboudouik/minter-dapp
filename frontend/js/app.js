@@ -191,9 +191,9 @@ async function loadInfo() {
         actionButton.innerText = button_presale_mint_not_whitelisted;
       } else {
         mainText.innerText = p_presale_mint_whitelisted;
-        actionButton.classList.add('hidden');
+        actionButton.classList.add("hidden");
         mintButton.innerText = button_presale_mint_whitelisted;
-        mintContainer.classList.remove('hidden');
+        mintContainer.classList.remove("hidden");
       }
     } catch(e) {
       // console.log(e);
