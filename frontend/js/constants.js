@@ -3,7 +3,7 @@ const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Socrates Gadfly NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = 'Socrates Gadflies live on the blockchain seeking to accelerate the transition to Crypto Technologies & Web3 for a brighter tomorrow. <a href="https://socratesgadfly.com"  target="_blank" rel="noopener noreferrer">Socrates Gadfly</a> Project.';
+const welcome_p = "Socrates Gadflies live on the blockchain seeking to accelerate the transition to Crypto Technologies & Web3 for a brighter tomorrow.";
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
