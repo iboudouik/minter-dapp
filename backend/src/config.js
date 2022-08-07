@@ -50,10 +50,6 @@ const format = {
 };
 
 const extraMetadata = {
-<<<<<<< HEAD
-  artist: "Osign",
-=======
->>>>>>> 65e02dbbb17c3699c6d5fd2d5b787df2ba105bdd
   external_url: "https://socratesgadfly.com", // Replace with your website or remove this line if you do not have one.
 };
 
@@ -71,19 +67,11 @@ const METADATA_UPDATABLE = false; // set to false if you don't want to allow met
 const OWNER_ADDRESS = '0x43FdfbD88A03B8FD09763a0450Ced3E784a1f436';
 const TREASURY_ADDRESS = '0x43FdfbD88A03B8FD09763a0450Ced3E784a1f436';
 const MAX_SUPPLY = 3334; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-<<<<<<< HEAD
-const MINT_PRICE = 8; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
-
-// REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-08-06T08:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
-=======
 const MINT_PRICE = 8; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PUBLIC_MINT_START_DATE = "2022-08-05T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
->>>>>>> 65e02dbbb17c3699c6d5fd2d5b787df2ba105bdd
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -94,11 +82,7 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-<<<<<<< HEAD
-let CONTRACT_ADDRESS = "0x75304f1CD7DB1257acB0f02D3f7b4825cD910A6A"; // If you want to manually include it
-=======
 let CONTRACT_ADDRESS = "0x4ce0166186c24d2cc8c74df17318183fC62f83ff"; // If you want to manually include it
->>>>>>> 65e02dbbb17c3699c6d5fd2d5b787df2ba105bdd
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
@@ -120,8 +104,6 @@ try {
 }
 // END NFTPort Info
 
-<<<<<<< HEAD
-=======
 const solanaMetadata = {
   symbol: "SGF",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
@@ -134,7 +116,6 @@ const solanaMetadata = {
   ],
 };
 
->>>>>>> 65e02dbbb17c3699c6d5fd2d5b787df2ba105bdd
 const gif = {
   export: false,
   repeat: 0,
