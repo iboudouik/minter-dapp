@@ -104,18 +104,6 @@ try {
 }
 // END NFTPort Info
 
-const solanaMetadata = {
-  symbol: "SGF",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://socratesgadfly.com",
-  creators: [
-    {
-      address: "0x43FdfbD88A03B8FD09763a0450Ced3E784a1f436",
-      share: 100,
-    },
-  ],
-};
-
 const gif = {
   export: false,
   repeat: 0,
